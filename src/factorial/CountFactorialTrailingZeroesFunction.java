@@ -12,15 +12,17 @@ public class CountFactorialTrailingZeroesFunction {
     }
     
     // Iterative solution, counting how many 5's in the factorial
-//     public int trailingZeroes(int n){
-//         int count = 0;
-        
-//         while(n != 0){
-//             int currentFives = n / 5;
-//             count = count + currentFives;
-//             n = currentFives;
-//         }
-
-//         return count;
-//     }
+    public int trailingZeroes2(int n){
+    	int count = 0;
+    	
+    	while(n != 0){
+    		int currentFive = n / 5;
+    		
+    		count += currentFive;
+    		
+    		n = currentFive;
+    	}
+    	
+    	return count;
+    }
 }

@@ -2,12 +2,12 @@ package factorial;
 
 public class Main {
 	public static void main(String[] args) {
-		int n = 100;
+		int n = 5;
 		
 		System.out.println("Input: " + n);
 		
 		CountFactorialTrailingZeroesFunction solution = new CountFactorialTrailingZeroesFunction();
 		
-		System.out.println("Solution: " + solution.trailingZeroes(n));
+		System.out.println("Solution: " + solution.trailingZeroes2(n));
 	}
 }
